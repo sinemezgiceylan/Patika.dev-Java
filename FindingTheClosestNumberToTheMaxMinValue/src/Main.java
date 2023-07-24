@@ -32,7 +32,5 @@ public class Main {
         System.out.println("Girilen sayıdan küçük en yakın sayı: " + min);
         System.out.println("Girilen sayıdan büyük en yakın sayı: " + max);
 
-
-
     }
 }
