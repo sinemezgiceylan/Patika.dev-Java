@@ -5,14 +5,15 @@ public class Game {
     private Scanner input = new Scanner(System.in);
 
     public void start() {
-        System.out.println("Macera Oyununa Hoşgeldiniz!");
-        System.out.println("Lütfen bir isim giriniz: ");
+        System.out.println("Welcome Adventurer!");
+        System.out.println("Please write your name: ");
         String playerName = input.nextLine();
 
         Player player = new Player(playerName);
-        System.out.println("Oyuncu " + player.getName() + " iyi eğlenceler!");
+        System.out.println("Oyuncu " + player.getPlayerName() + " enjoy!");
 
-        System.out.println("Lütfen bir karakter seçiniz!");
         player.selectChar();
+
+        player.selectLocation();
     }
 }
